@@ -4,18 +4,19 @@ import Image from "next/image";
 // Define your skills data with names and proficiency percentages
 const skillsData = [
   { name: "HTML", percentage: 80 },
-  { name: "CSS", percentage: 75 },
-  { name: "JavaScript", percentage: 60 },
-  { name: "React-JS", percentage: 90 },
-  { name: "NEXT-JS", percentage: 90 },
-  // { name: "TAILWIND", percentage: 90 },
-  // { name: "Redux-Toolkit", percentage:80 },
+  { name: "CSS", percentage: 80 },
+  { name: "JavaScript", percentage: 70 },
+  { name: "React-JS", percentage: 70 },
+  { name: "NEXT-JS", percentage: 70 },
+  { name: "Vue-Js", percentage:70 },
+  // { name: "TAILWIND", percentage: 70 },
   // { name: "VTK", percentage: 50 },
   // { name: "CORNERSTONE", percentage: 50 },
 
 
 
 ];
+
 
 export default function Skills() {
   return (

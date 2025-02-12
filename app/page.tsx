@@ -1,14 +1,16 @@
-import Image from "next/image";
-import type { Metadata } from "next";
+"use client";
+//import Image from "next/image";
+//import type { Metadata } from "next";
 import dynamic from "next/dynamic";
-import HomeSkeleton from "./Components/Skeletons/HomeSkelton";
-import ContactSkeleton from "./Components/Skeletons/ContactSkelton";
-import AboutSkeleton from "./Components/Skeletons/AboutSkelton";
-import ProjectSkeleton from "./Components/Skeletons/ProjectSkelton";
-import ServiceSkeleton from "./Components/Skeletons/ServiceSkelton";
-import SkillsSkeleton from "./Components/Skeletons/SkillSkelton";
+//import HomeSkeleton from "./Components/Skeletons/HomeSkelton";
+import ContactSkeleton from "@/app/Components/Skeletons/ContactSkelton";
+import AboutSkeleton from "@/app/Components/Skeletons/AboutSkelton";
+import ProjectSkeleton from "@/app/Components/Skeletons/ProjectSkelton";
+import ServiceSkeleton from "@/app/Components/Skeletons/ServiceSkelton";
+import SkillsSkeleton from "@/app/Components/Skeletons/SkillSkelton";
+import HomeSkeleton from "@/app/Components/Skeletons/HomeSkelton";
 
-const HomeContent = dynamic(()=>import('./Components/Home'),{
+const HomeContent = dynamic(()=>import('@/app/Components/Home'),{
 ssr:false,
 loading:()=>(
   <div>
@@ -16,7 +18,7 @@ loading:()=>(
   </div>
 ),
 })
-const About = dynamic(()=>import('./Components/About'),{
+const About = dynamic(()=>import('@/app/Components/About'),{
   ssr: false,
   loading: () => (
     <div>
@@ -24,7 +26,7 @@ const About = dynamic(()=>import('./Components/About'),{
     </div>
   ),
 })
-const Services = dynamic(()=>import("./Components/Services"),{
+const Services = dynamic(()=>import("@/app/Components/Services"),{
   ssr:false,
   loading:()=>(
     <div>
@@ -32,7 +34,7 @@ const Services = dynamic(()=>import("./Components/Services"),{
     </div>
   )
 })
-const Contact = dynamic(()=>import("./Components/Contact"),{
+const Contact = dynamic(()=>import("@/app/Components/Contact"),{
   ssr:false,
   loading:()=>(
     <div>
@@ -40,7 +42,7 @@ const Contact = dynamic(()=>import("./Components/Contact"),{
     </div>
   )
 })
-const Skills = dynamic(()=>import("./Components/Skills"),{
+const Skills = dynamic(()=>import("@/app/Components/Skills"),{
   ssr:false,
   loading:()=>(
     <div>
@@ -48,7 +50,7 @@ const Skills = dynamic(()=>import("./Components/Skills"),{
     </div>
   )
 })
-const Project = dynamic(()=>import('./Components/Project'),{
+const Project = dynamic(()=>import('@/app/Components/Project'),{
   ssr: false,
   loading: () => (
     <div>

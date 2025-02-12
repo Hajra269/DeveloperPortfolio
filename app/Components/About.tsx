@@ -64,7 +64,7 @@ export default function About() {
              {/* CV/Resume */}
             <div className="mt-3">
               <a
-                href="/updated_Resume.pdf"
+                href="/HajraBuksh_Resume.pdf"
                 download="Hajra's_Resume.pdf"
               >
                 <button className="bg-green-500 text-[#112A46] font-semibold text-lg p-4 py-2 rounded-full hover:-translate-y-3 transition-all duration-500">
